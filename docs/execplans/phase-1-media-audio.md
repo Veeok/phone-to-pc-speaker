@@ -9,7 +9,6 @@ Phase 1 supports media audio foundation only. Phone call audio is not included.
 ## Audit Summary
 
 - Repository audit started from an empty workspace root. No application files, build files, or documentation were present.
-- `AGENTS.md` did not exist before this pass.
 - No existing Electron app, shared package, or Windows bridge code was present.
 - Available runtimes observed from the shell:
   - `node --version` -> `v25.8.0`
@@ -30,7 +29,7 @@ Phase 1 supports media audio foundation only. Phone call audio is not included.
 ## File Plan
 
 - Root workspace: `package.json`, `pnpm-workspace.yaml`, `tsconfig.base.json`, `eslint.config.mjs`, `.gitignore`, `README.md`
-- Planning and docs: `AGENTS.md`, `docs/execplans/phase-1-media-audio.md`, `docs/manual-test-checklist.md`
+- Planning and docs: `docs/execplans/phase-1-media-audio.md`, `docs/manual-test-checklist.md`
 - Shared types: `packages/shared-types/package.json`, `packages/shared-types/tsconfig.json`, `packages/shared-types/src/index.ts`
 - Desktop shell: `apps/desktop/package.json`, `apps/desktop/tsconfig.json`, `apps/desktop/electron.vite.config.ts`, `apps/desktop/src/main/*`, `apps/desktop/src/preload/*`, `apps/desktop/src/renderer/*`
 - Windows bridge docs: `packages/windows-bridge/README.md`
@@ -128,7 +127,6 @@ Phase 1 supports media audio foundation only. Phone call audio is not included.
 ## Progress Checklist
 
 - [x] Audit completed
-- [x] `AGENTS.md` created and populated with permanent rules
 - [x] Workspace scaffolded
 - [x] Shared types package scaffolded
 - [x] Electron shell scaffolded
