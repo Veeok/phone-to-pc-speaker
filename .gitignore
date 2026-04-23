@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.DS_Store
+.nuget/
+apps/desktop/dist/
+apps/desktop/out/
+packages/shared-types/dist/
+*.tsbuildinfo
+*.jks
+*.keystore
+packages/windows-bridge/**/bin/
+packages/windows-bridge/**/obj/
