@@ -1,6 +1,7 @@
 {
   "name": "phone-to-pc-speaker-workspace",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "packageManager": "pnpm@9.15.0",
   "scripts": {

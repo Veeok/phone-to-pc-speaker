@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="apps/desktop/resources/app-icon.png" alt="Phone To pc speaker icon" width="120">
+</p>
+
 # Phone To pc speaker
 
 Windows Electron + .NET desktop app for routing supported phone media audio to a PC with honest diagnostics and explicit capability reporting.
@@ -7,6 +11,17 @@ Windows Electron + .NET desktop app for routing supported phone media audio to a
 - Media audio foundation is implemented.
 - Phone call audio is not a shipped feature in this repository.
 - The UI is intentionally explicit about that limitation.
+
+## Feature Overview
+
+| Area | Status | Notes |
+| --- | --- | --- |
+| Device discovery | Implemented | Enumerates eligible remote media-audio devices through the Windows bridge |
+| Connection lifecycle | Implemented | Supports enable, open, and release flows |
+| Diagnostics | Implemented | Summary-first diagnostics with deeper troubleshooting detail |
+| Communication readiness | Implemented | Separates media-audio support from call-audio readiness |
+| Call audio | Not shipped | Deliberately presented as unsupported or unknown |
+| Windows-only native path | Required | Uses a separate C# bridge for Bluetooth/media-audio operations |
 
 ## What It Does
 
@@ -52,6 +67,15 @@ pnpm build
 pnpm typecheck
 pnpm lint
 ```
+
+## Validation
+
+| Command | Purpose |
+| --- | --- |
+| `pnpm build` | Build the workspace |
+| `pnpm typecheck` | Validate TypeScript contracts and app code |
+| `pnpm lint` | Run lint checks |
+| `pnpm bridge:build` | Build the native Windows bridge |
 
 Direct bridge build:
 
